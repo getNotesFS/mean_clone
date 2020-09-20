@@ -8,7 +8,7 @@ block content
         .container
             .breadcrumb-inner
                 h2 SHOP CART
-                a(href='#') Home
+                a(href='/') Home
                 span Shop
     // End Breadcrumb Part
     section.home-icon.shop-cart.bg-skeen
@@ -127,6 +127,5 @@ block content
                                     | I’ve read and accept the
                                     | 									terms & conditions *
                             .checkout-button
-                                button.button-default.btn-large.btn-primary-gold
-                                    | PROCEED TO
-                                    | PAYMENT
+                                a(href="ordercomplete")
+                                    button.button-default.btn-large.btn-primary-gold PROCEED TOPAYMENT
