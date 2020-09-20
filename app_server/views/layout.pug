@@ -107,7 +107,8 @@ html
                       .cart-blog
                         .cart-item
                           .cart-item-left
-                            img(src='images/images-img59.png', alt='')
+                            a(href='product')
+                              img(src='images/images-img59.png', alt='')
                           .cart-item-right
                             h6 Caramel Chesse Cake
                             span $ 14.00
@@ -119,16 +120,9 @@ html
                             .col-md-6.col-sm-6.col-xs-6
                               span $ 14.00
                         .cart-btn
-                          a.btn-black.view(href='#') VIEW ALL
-                          a.btn-main.checkout(href='#') CHECK OUT
-                  // Search ICON  *NOTE: Remove Style from Cart Buttom margin-right
-                  //
-                    <div class="search-part">
-                    <a href="#"></a>
-                    <div class="search-box">
-                    <input type="text" name="txt" placeholder="Search"><input type="submit"
-                    name="submit" value=" "></div>
-                    </div>
+                          a.btn-black.view(href='shopping-cart') VIEW ALL
+                          a.btn-main.checkout(href='checkout') CHECK OUT
+                   
               // 3 LINES COLLAPCE
               .menu-icon
                 a.hambarger(href='#')
@@ -139,18 +133,18 @@ html
               .menu-main
                 ul
                   li
-                    a(href='index.html') Home
+                    a(href='/') Home
                   li
-                    a(href='about.html') About Us
+                    a(href='about') About Us
                   li
-                    a(href='shop.html') Menu
+                    a(href='menu') Menu
                   li
-                    a(href='blog_2col.html') Offers
+                    a(href='offerts') Offers
                   li
-                    a(href='contact.html') Contact
+                    a(href='contact') Contact
               // LOGO
               .logo
-                a(href='index.html')
+                a(href='/')
                   img(src='images/images-logo.png', alt='')
           // CART BUTTOM  END
           // End Header

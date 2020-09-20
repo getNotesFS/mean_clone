@@ -10,6 +10,7 @@ const ctrlAbout = require('../controllers/about');
 const ctrlContact = require('../controllers/contact');
 const ctrlShopping= require('../controllers/shopping');
 const ctrlMenu= require('../controllers/menu');
+const ctrlProduct= require('../controllers/single-product');
 
 const ctrlOfferts= require('../controllers/offerts');
 
@@ -30,6 +31,10 @@ router.get('/menu', ctrlMenu.menu);
 
 /*34.- Offerts*/
 router.get('/offerts', ctrlOfferts.offerts);
+ 
+/*34.- Single Product*/
+router.get('/product', ctrlProduct.product);
+ 
 /*7.- Checkout*/
 router.get('/shopping-cart', ctrlShopping.cart);
 router.get('/checkout', ctrlShopping.checkout);
