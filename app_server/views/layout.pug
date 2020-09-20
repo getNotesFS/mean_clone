@@ -1,12 +1,270 @@
 doctype html
 html
   head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
     title= title
-    //link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css', integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z', crossorigin='anonymous')
+    link(href='./stylesheets/bootstrap-datepicker.css', rel='stylesheet')
+    // FONT-AWESOME
+    script(src='https://kit.fontawesome.com/66d7b97049.js', crossorigin='anonymous')
+    // FORM STYLER
+    link(href='./stylesheets/form-field-jquery.formstyler.css', rel='stylesheet')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.css', integrity='sha512-qP7Bo11vBMwOisDf5u5XX4EG7PwtuTha6Ghh864As/xLSKdD5BbW5gVE2Tym6VerZFEev9OmmHV2BKuanp/WaA==', crossorigin='anonymous')
+    // SLIDER
+    link(href='./stylesheets/revolution-plugin-extralayers.css', rel='stylesheet')
+    link(href='./stylesheets/revolution-plugin-settings.css', rel='stylesheet')
+    link(href='./stylesheets/owl-carousel-owl.carousel.css', rel='stylesheet')
+    link(href='./stylesheets/owl-carousel-owl.theme.default.css', rel='stylesheet')
+    // PLUGINS
+    link(href='./stylesheets/slick-slider-slick-theme.css', rel='stylesheet')
+    link(href='./stylesheets/magnific-magnific-popup.css', rel='stylesheet')
+    link(href='./stylesheets/scroll-bar-jquery.mCustomScrollbar.css', rel='stylesheet')
+    link(href='./stylesheets/animation-animate.min.css', rel='stylesheet')
+    // TEMPLATE CSS FILES
+    link(href='./stylesheets/css-theme.css', rel='stylesheet')
+    link(href='./stylesheets/css-responsive.css', rel='stylesheet')
+    //CUSMTOM CSS
+    link(rel="stylesheet", href="./stylesheets/custom_style.css")
 
-    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')   
-    script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js') 
-    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+    //JAVASCRIPT HERE =========================================
+
+    // BOOTSTRAP JS
+    script(src='./javascripts/old-jquery.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js', integrity='sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV', crossorigin='anonymous')
+    script(src='./javascripts/bootstrap-bootstrap-datepicker.js')
+    // MAP API
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAf6My1Jfdi1Fmj-DUmX_CcNOZ6FLkQ4Os')
+    // FORM STYLER
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.js', integrity='sha512-NQWLm7ozXeOcDB639QSEzUWiNDEKD/mPKDIH256UYr9V7dwqF6OW4+1AEAVSaY6iaCaJzjjAR2GV6bPBYEzHig==', crossorigin='anonymous')
+    script(src='./javascripts/revolution-plugin-jquery.themepunch.plugins.min.js')
+    script(src='./javascripts/revolution-plugin-jquery.themepunch.revolution.min.js')
+    script(src='./javascripts/owl-carousel-owl.carousel.min.js')
+    script(src='./javascripts/slick-slider-slick.min.js')
+    script(src='./javascripts/isotop-isotop.js')
+    script(src='./javascripts/isotop-packery-mode.pkgd.min.js')
+    script(src='./javascripts/magnific-jquery.magnific-popup.min.js')
+    script(src='./javascripts/scroll-bar-jquery.mCustomScrollbar.concat.min.js')
+    script(src='./javascripts/animation-wow.min.js')
+    script(src='./javascripts/parallax-jquery.stellar.js')
+    script(src='./javascripts/js-app.js')
+    script(src='./javascripts/js-script.js')
+
   body
-    block content
+    // Page pre loader
+    #pre-loader
+      .loader-holder
+        .frame
+          img(src='images/images-Preloader.gif', alt='Laboom')
+    .wrapper
+      // Start Header
+      header
+        .header-part.header-reduce.sticky
+          .header-top
+            .container
+              .header-top-inner
+                .header-top-left
+                  a.top-cell(href='#')
+                    img(src='images/images-fon.png', alt='')
+                    span 123-456-7890
+                  a.top-email(href='#')
+                    span support@laboom.com
+                .header-top-right
+                  .social-top
+                    ul
+                      li
+                        a(href='#')
+                          i.fab.fa-facebook(aria-hidden='true')
+                      li
+                        a(href='#')
+                          i.fab.fa-twitter(aria-hidden='true')
+                      li
+                        a(href='#')
+                          i.fab.fa-instagram(aria-hidden='true')
+                  .language-menu
+                    a.current-lang(href='#', data-toggle='modal', data-target='#signinModal')
+                      i.far.fa-user
+                      |  Sign In
+                    //
+                      <ul>
+                      <li><a href="#"><i class="fab fa-angle-right" aria-hidden="true"></i>Login</a>
+                      </li>
+                      <li><a href="#"><i class="fab fa-angle-right"
+                      aria-hidden="true"></i>Register</a></li>
+                      </ul>
+          // CART BUTTOM  START
+          .header-bottom
+            .container
+              .header-info
+                .header-info-inner
+                  // CART BUTTOM
+                  .shop-cart.header-collect(style='margin-right:0px')
+                    a(href='#')
+                      img(src='images/images-icon-basket.png', alt='')
+                      | 1 item - $ 14.00
+                    .cart-wrap
+                      .cart-blog
+                        .cart-item
+                          .cart-item-left
+                            img(src='images/images-img59.png', alt='')
+                          .cart-item-right
+                            h6 Caramel Chesse Cake
+                            span $ 14.00
+                          span.delete-icon
+                        .subtotal
+                          .row
+                            .col-md-6.col-sm-6.col-xs-6
+                              h6 Subtotal :
+                            .col-md-6.col-sm-6.col-xs-6
+                              span $ 14.00
+                        .cart-btn
+                          a.btn-black.view(href='#') VIEW ALL
+                          a.btn-main.checkout(href='#') CHECK OUT
+                  // Search ICON  *NOTE: Remove Style from Cart Buttom margin-right
+                  //
+                    <div class="search-part">
+                    <a href="#"></a>
+                    <div class="search-box">
+                    <input type="text" name="txt" placeholder="Search"><input type="submit"
+                    name="submit" value=" "></div>
+                    </div>
+              // 3 LINES COLLAPCE
+              .menu-icon
+                a.hambarger(href='#')
+                  span.bar-1
+                  span.bar-2
+                  span.bar-3
+              // MAIN MENU
+              .menu-main
+                ul
+                  li
+                    a(href='index.html') Home
+                  li
+                    a(href='about.html') About Us
+                  li
+                    a(href='shop.html') Menu
+                  li
+                    a(href='blog_2col.html') Offers
+                  li
+                    a(href='contact.html') Contact
+              // LOGO
+              .logo
+                a(href='index.html')
+                  img(src='images/images-logo.png', alt='')
+          // CART BUTTOM  END
+          // End Header
+          
+          
+     
+      // Start Main -BLOCK CONTENT HERE
+      main
+        .main-part 
+          block content
+      // End Main
+      // Start Footer
+      footer
+        .footer-part.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='300ms')
+          .icon-default.icon-dark
+            img(src='images/images-footer-logo.png', alt='')
+          .container
+            .footer-inner
+              .footer-info
+                h3 La boom Restaurant
+                p 329 Queensberry Street, North Melbourne VIC 3051, Australia.
+                p
+                  a(href='#') 123 456 7890
+                p
+                  a(href='#') support@laboom.com
+            .copy-right
+              .row
+                .col-md-6.col-sm-6.col-xs-12.copyright-before
+                  span Copyright © 2017 Polygon Theme. All rights reserved.
+                .col-md-6.col-sm-6.col-xs-12.copyright-after
+                  .social-round
+                    ul
+                      li
+                        a(href='#')
+                          i.fab.fa-facebook(aria-hidden='true')
+                      li
+                        a(href='#')
+                          i.fab.fa-twitter(aria-hidden='true')
+                      li
+                        a(href='#')
+                          i.fab.fa-instagram(aria-hidden='true')
+                      li
+                        a(href='#')
+                          i.fab.fa-pinterest(aria-hidden='true')
+                      li
+                        a(href='#')
+                          i.fab.fa-dribbble(aria-hidden='true')
+                      li
+                        a(href='#')
+                          i.fab.fa-google(aria-hidden='true')
+          .icon-find
+            a(href='#')
+              img(src='images/images-location.png', alt='')
+              span Find us on Map
+          .location-footer-map
+            .icon-find-location
+              a(href='#')
+                img(src='images/images-location.png', alt='')
+                span Find us on Map
+            .footer-map-outer
+              #footer-map
+      // End Footer
+
+      // Sign In
+      #signinModal.modal.fade.booktable(tabindex='-1', role='dialog', aria-labelledby='signinModal')
+        .modal-dialog(role='document')
+          .modal-content
+            .modal-body
+              button.close(type='button', data-dismiss='modal', aria-label='Close')
+                span(aria-hidden='true') ×
+              .table-title
+                h2 Iniciar Sesión
+                h6.heade-xs
+                  | Si aún no tienes una cuenta, por favor 
+                  a(href='#', data-toggle='modal', data-target='#registerModal') registrate aquí
+                  |  o una cuenta se creará con los
+                  |                                 datos de facturación tras tu compra.
+              .row
+                .col-md-12.col-sm-12.col-xs-12
+                  input(type='email', name='email', placeholder='Email Address')
+                .col-md-12.col-sm-12.col-xs-12
+                  input(type='password', name='password', placeholder='Password')
+                .col-md-12.col-sm-12.col-xs-12
+                  button.btn-main.btn-big Login
+                .col-md-12.col-sm-12.col-xs-12.justify-content-center
+                  a.btn-outer.btn-medium(href='#', data-toggle='modal', data-target='#registerModal') Register Now
+      // EndSign In
+      // Register
+      #registerModal.modal.fade.booktable(tabindex='-1', role='dialog', aria-labelledby='signinModal')
+        .modal-dialog(role='document')
+          .modal-content
+            .modal-body
+              button.close(type='button', data-dismiss='modal', aria-label='Close')
+                span(aria-hidden='true') ×
+              .table-title
+                h2 Registrarse
+                h6.heade-xs
+                  | Si ya tiene una cuenta, puedes 
+                  a(href='#', data-toggle='modal', data-target='#signinModal') iniciar sesión
+                  | !
+              .row
+                .col-md-6.col-sm-6.col-xs-12
+                  input(type='text', name='text', placeholder='Nombre')
+                .col-md-6.col-sm-6.col-xs-12
+                  input(type='text', name='text', placeholder='Apellido')
+                .col-md-12.col-sm-12.col-xs-12
+                  input(type='email', name='email', placeholder='Corrreo Electrónico')
+                .col-md-12.col-sm-12.col-xs-12
+                  input(type='password', name='password', placeholder='Contraseña')
+                .col-md-12.col-sm-12.col-xs-12
+                  button.btn-main.btn-big Register
+                .col-md-12.col-sm-12.col-xs-12.justify-content-center
+                  a.btn-outer.btn-medium(href='#', data-toggle='modal', data-target='#signinModal') Login Now
+      // Tegister end
+      // Back To Top Arrow
+      a.top-arrow(href='#')        
+     

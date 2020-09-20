@@ -1,0 +1,32 @@
+
+extends layout
+
+
+block content
+
+
+
+    // Start Breadcrumb Part
+    section.breadcrumb-part(data-stellar-offset-parent='true', data-stellar-background-ratio='0.5', style="background-image: url('images/breadbg1.jpg');")
+        .container
+            .breadcrumb-inner
+                h2=title
+                a(href='#') Home
+                span=title
+    // End Breadcrumb Part
+    section.home-icon.blog-main-section.shop-page
+        .icon-default
+            img(src='images/images-scroll-arrow.png', alt='')
+        .container
+            // CONTENT JUSTIFIED, CHECK THAT
+            .row.justify-content-center.no-gutters
+                // Special Offer
+                .special-offer.mb-5.animated(data-animation='fadeIn')
+                    img.special-offer-image(src='images/gallery-mesonary5.jpg', alt='')
+                    .special-offer-content
+                        h2.mb-2 Free Burger
+                        h5.text-muted.mb-5 Get free burger from orders higher that $40!
+                        ul.list-check.text-lg.mb-0
+                            li Only on Tuesdays
+                            li.false Order higher that $40
+                            li Unless one burger ordered

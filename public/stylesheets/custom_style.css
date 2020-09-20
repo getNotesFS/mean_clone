@@ -1,0 +1,22 @@
+
+
+
+.bg-light .special-offer .special-offer-content {
+    background-color: #fff;
+}
+.special-offer .special-offer-content {
+    position: relative;
+    width: 55%;
+    margin-left: -5%;
+    margin-top: 5%;
+    float: left;
+    background-color: #f3f4f4;
+    padding: 4rem;
+    z-index: 2;
+}
+.special-offer .special-offer-image {
+  position: relative;
+  width: 50%;
+  float: left;
+  z-index: 1;
+}

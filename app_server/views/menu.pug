@@ -1,0 +1,76 @@
+extends layout
+
+
+block content
+
+    // Start Breadcrumb Part
+    section.breadcrumb-part(data-stellar-offset-parent='true', data-stellar-background-ratio='0.5', style="background-image: url('images/breadbg1.jpg');")
+        .container
+            .breadcrumb-inner
+                h2=title
+                a(href='/') Home
+                span=title
+    // End Breadcrumb Part
+    section.home-icon.blog-main-section.shop-page
+        .icon-default
+            img(src='images/images-scroll-arrow.png', alt='')
+        .container
+            // CONTENT JUSTIFIED, CHECK THAT
+            .row.justify-content-center.no-gutters
+                .col-md-10.push-md-1(role='tablist')
+                    // Menu Category / Pizza
+                    #Pizza.menu-category
+                        .menu-category-title.collapse-toggle(role='tab', data-target='#menuPizzaContent', data-toggle='collapse', aria-expanded='false')
+                            .bg-image
+                                img(src='images/photos-menu-title-pizza.jpg', alt='')
+                            h2.title Pizza
+                        #menuPizzaContent.menu-category-content.padded.collapse
+                            .row.gutters-sm
+                                .col-lg-4.col-6
+                                    // Menu Item
+                                    .menu-item.menu-grid-item
+                                        img.mb-4(src='images/products-product-burger.jpg', alt='')
+                                        h6.mb-0 Beef Burger
+                                        span.text-muted.text-sm
+                                            | Beef, cheese, potato, onion,fries
+                                        .row.align-items-center.mt-4
+                                            .col-sm-6
+                                                span.text-md.mr-4
+                                                    span.text-muted from
+                                                    |  $9.00
+                                            .col-sm-6.text-sm-right.mt-2.mt-sm-0
+                                                button.btn.btn-outline-secondary.btn-sm(data-target='#productModal', data-toggle='modal')
+                                                    span
+                                                        | Add to cart
+                                .col-lg-4.col-6
+                                    // Menu Item
+                                    .menu-item.menu-grid-item
+                                        img.mb-4(src='images/products-product-pizza.jpg', alt='')
+                                        h6.mb-0 Broccoli
+                                        span.text-muted.text-sm
+                                            | Beef, cheese, potato, onion,fries
+                                        .row.align-items-center.mt-4
+                                            .col-sm-6
+                                                span.text-md.mr-4
+                                                    span.text-muted from
+                                                    |  $9.00
+                                            .col-sm-6.text-sm-right.mt-2.mt-sm-0
+                                                button.btn.btn-outline-secondary.btn-sm(data-target='#productModal', data-toggle='modal')
+                                                    span
+                                                        | Add to cart
+                                .col-lg-4.col-6
+                                    // Menu Item
+                                    .menu-item.menu-grid-item
+                                        img.mb-4(src='images/products-product-chicken-burger.jpg', alt='')
+                                        h6.mb-0 Chicken Burger
+                                        span.text-muted.text-sm
+                                            | Beef, cheese, potato, onion, fries
+                                        .row.align-items-center.mt-4
+                                            .col-sm-6
+                                                span.text-md.mr-4
+                                                    span.text-muted from
+                                                    |  $9.00
+                                            .col-sm-6.text-sm-right.mt-2.mt-sm-0
+                                                button.btn.btn-outline-secondary.btn-sm(data-target='#productModal', data-toggle='modal')
+                                                    span
+                                                        | Add to cart

@@ -1,0 +1,38 @@
+extends layout
+
+
+block content
+   
+    // Start Breadcrumb Part
+    section.breadcrumb-part(data-stellar-offset-parent='true', data-stellar-background-ratio='0.5', style="background-image: url('images/breadbg1.jpg');")
+      .container
+        .breadcrumb-inner
+          h2= title
+          a(href='#') Home
+          span= title
+    // End Breadcrumb Part
+    // Start Welcome Part
+    section.welcome-part.home-icon.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='300ms')
+      .icon-default
+        a(href='#')
+          img(src='images/images-scroll-arrow.png', alt='')
+      .container
+        .build-title
+          h2 Welcome To The La Boom
+          h6 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        .row
+          .col-md-6.col-sm-6.col-xs-12
+            p
+              | Welcome. This is La Boom. Elegant & sophisticated restaurant template. Royal
+              | plate offers different home page layouts with smart and unique design, showcasing
+              | beautifully designed elements every restaurant website should have. Smooth
+              | animations, fast loading and engaging user experience are just some of , the
+              | features this template offers. So, give it a try and dive into a world of La Boom
+              | restaurant websites.
+            p
+              img(src='images/images-signature.png', alt='')
+            p
+              a.btn-black(href='#') LEARN MORE
+          .col-md-6.col-sm-6.col-xs-12
+            img(src='images/images-img2.png', alt='')
+    // End Welcome Part

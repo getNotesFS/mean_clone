@@ -1,0 +1,239 @@
+extends layout
+
+ 
+block content
+
+    // Start Breadcrumb Part
+    section.breadcrumb-part(data-stellar-offset-parent='true', data-stellar-background-ratio='0.5', style="background-image: url('images/breadbg1.jpg');")
+        .container
+            .breadcrumb-inner
+                h2 SHOP CART
+                a(href='#') Home
+                span Shop
+    // End Breadcrumb Part
+    section.home-icon.shop-cart.bg-skeen
+        .icon-default.icon-skeen
+            img(src='images/scroll-arrow.png', alt='')
+        .container
+            .checkout-wrap.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='300ms')
+                ul.checkout-bar
+                    li.active Shopping Cart
+                    li Checkout
+                    li Order Complete
+            .shop-cart-list.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='300ms')
+                table.shop-cart-table
+                    thead
+                        tr
+                            th PRODUCT
+                            th PRICE
+                            th QUANTITY
+                            th TOTAL
+                    tbody
+                        tr
+                            th PRODUCT
+                            td
+                                .product-cart
+                                    img(src='images/img70.png', alt='')
+                                .product-cart-title
+                                    span Blanched Garlic
+                            th PRICE
+                            td
+                                strong $59
+                                del $5400.00
+                            th QUANTITY
+                            td
+                                .price-textbox
+                                    span.minus-text
+                                        i.fas.fa-minus
+                                    input(name='txt', placeholder='1', type='text')
+                                    span.plus-text
+                                        i.fas.fa-plus
+                            th TOTAL
+                            td $59
+                            td.shop-cart-close
+                                i.fas.fa-times
+                        tr
+                            th PRODUCT
+                            td
+                                .product-cart
+                                    img(src='images/img71.png', alt='')
+                                .product-cart-title
+                                    span Blanched Garlic
+                            th PRICE
+                            td
+                                strong $59
+                                del $5400.00
+                            th QUANTITY
+                            td
+                                .price-textbox
+                                    span.minus-text
+                                        i.fas.fa-minus
+                                    input(name='txt', placeholder='1', type='text')
+                                    span.plus-text
+                                        i.fas.fa-plus
+                            th TOTAL
+                            td $59
+                            td.shop-cart-close
+                                i.fas.fa-times
+                        tr
+                            th PRODUCT
+                            td
+                                .product-cart
+                                    img(src='images/img72.png', alt='')
+                                .product-cart-title
+                                    span Blanched Garlic
+                            th PRICE
+                            td
+                                strong $59
+                                del $5400.00
+                            th QUANTITY
+                            td
+                                .price-textbox
+                                    span.minus-text
+                                        i.fas.fa-minus
+                                    input(name='txt', placeholder='1', type='text')
+                                    span.plus-text
+                                        i.fas.fa-plus
+                            th TOTAL
+                            td $59
+                            td.shop-cart-close
+                                i.fas.fa-times
+                .product-cart-detail
+                    .cupon-part
+                        input(type='text', name='txt', placeholder='Cupon Code')
+                    a.btn-medium.btn-dark-coffee(href='#') Apply Coupon
+                    a.btn-medium.btn-skin.pull-right(href='#') UPDATE cart
+            .cart-total.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='300ms')
+                .cart-total-title
+                    h5 CART TOTALS
+                .product-cart-total
+                    small Total products
+                    span $140.00
+                .product-cart-total
+                    small Total shipping
+                    span $15.00
+                .grand-total
+                    h5
+                        | TOTAL 
+                        span $140.00
+                .proceed-check
+                    a.btn-primary-gold.btn-medium(href='shop_checkout.html') PROCEED TO CHECKOUT
+
+        .icon-default.icon-skeen
+            img(src='images/images-scroll-arrow.png', alt='')
+        .container
+            .checkout-wrap.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='300ms')
+                ul.checkout-bar
+                    li.done-proceed Shopping Cart
+                    li.active Checkout
+                    li Order Complete
+            .row
+                .col-md-7.col-sm-7.col-xs-12.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='300ms')
+                    .shop-checkout-left
+                        h6
+                            | Returning customer? Click here to 
+                            a(href='login_register.html') login
+                        form.form-checkout(name='form', method='post')
+                            .row
+                                .col-md-12.col-sm-12.col-xs-12
+                                    h5 Billing Details
+                                .col-md-6.col-sm-12.col-xs-12
+                                    input(type='text', name='txt', placeholder='First Name')
+                                .col-md-6.col-sm-12.col-xs-12
+                                    input(type='text', name='txt', placeholder='Last Name')
+                                .col-md-12.col-sm-12.col-xs-12
+                                    input(type='text', name='txt', placeholder='Company Name')
+                                .col-md-6.col-sm-12.col-xs-12
+                                    input(type='email', name='email', placeholder='Email')
+                                .col-md-6.col-sm-12.col-xs-12
+                                    input(type='text', name='text', placeholder='Phone')
+                                .col-md-12.col-sm-12.col-xs-12
+                                    select.select-dropbox
+                                        option Country
+                                        option India
+                                        option USA
+                                        option London
+                                .col-md-12.col-sm-12.col-xs-12
+                                    textarea(placeholder='Address')
+                                .col-md-12.col-sm-12.col-xs-12
+                                    select.select-dropbox
+                                        option Province
+                                        option list 1
+                                        option list 2
+                                        option list 3
+                                .col-md-12.col-sm-12.col-xs-12
+                                    label
+                                        input(type='checkbox', name='checkbox')
+                                        | Create an account ?
+                                .col-md-12.col-sm-12.col-xs-12
+                                    h5 Shipping Address
+                                .col-md-12.col-sm-12.col-xs-12
+                                    label
+                                        input(type='checkbox', name='checkbox')
+                                        | Ship to a different address
+                                        | 										?
+                                .col-md-12.col-sm-12.col-xs-12
+                                    textarea(placeholder='Order Notes')
+                .col-md-5.col-sm-5.col-xs-12.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='300ms')
+                    .shop-checkout-right
+                        .shop-checkout-box
+                            h5 YOUR ORDER
+                            .shop-checkout-title
+                                h6
+                                    | PRODUCT 
+                                    span TOTAL
+                            .shop-checkout-row
+                                p
+                                    span Rocha Sleeve Sweater
+                                    |  x1 
+                                    small $140.00
+                                p
+                                    span Mauris Tincidunt
+                                    |  x6 
+                                    small $140.00
+                            .checkout-total
+                                h6
+                                    | CART SUBTOTAL 
+                                    small $140.00
+                            .checkout-total
+                                h6
+                                    | SHIPPING 
+                                    small Free Shipping
+                            .checkout-total
+                                h6
+                                    | ORDER TOTAL 
+                                    small.price-big $140.00
+                        .shop-checkout-box
+                            h5 PAYMENT METHODS
+                            label
+                                input(type='radio', name='radio')
+                                | Direct Bank Transfer
+                            p
+                                | Make your payment directly into our bank account. Please use your cleared in
+                                | our account.
+                            .payment-mode
+                                label
+                                    input(type='radio', name='radio')
+                                    | Check Payments
+                            .payment-mode
+                                label
+                                    input(type='radio', name='radio')
+                                    | Cash on Delivery
+                            .payment-mode
+                                label
+                                    input(type='radio', name='radio')
+                                    |  PayPal
+                                a(href='#')
+                                    img(src='images/images-paycart.png', alt='')
+                                a(href='#')
+                                    | What is
+                                    | PayPal?
+                            .checkout-terms
+                                label
+                                    input(type='checkbox', name='checkbox')
+                                    | I’ve read and accept the
+                                    | 									terms & conditions *
+                            .checkout-button
+                                button.button-default.btn-large.btn-primary-gold
+                                    | PROCEED TO
+                                    | PAYMENT

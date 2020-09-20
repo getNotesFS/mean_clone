@@ -1,0 +1,86 @@
+extends layout
+
+
+block content
+
+		section.contact-map
+			.map-outer
+				#map
+		// Start Contact Part
+		section.default-section.contact-part.home-icon
+			.icon-default
+				a(href='#')
+					img(src='images/images-scroll-arrow.png', alt='')
+			.container
+				.title.text-center
+					h2.text-coffee= title
+					h6.heade-xs We are a second-generation family business established in 1972
+				.row
+					.col-md-4.col-sm-4.col-xs-12.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='300ms')
+						.contact-blog-row
+							.contact-icon
+								img(src='images/images-location-icon.png', alt='')
+							p 329 Queensberry Street, North Melbourne VIC 3051, Australia.
+					.col-md-4.col-sm-4.col-xs-12.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='300ms')
+						.contact-blog-row
+							.contact-icon
+								img(src='images/images-cell-icon.png', alt='')
+							p
+								a(href='tel:1234567890') 123 456 7890
+					.col-md-4.col-sm-4.col-xs-12.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='300ms')
+						.contact-blog-row
+							.contact-icon
+								img(src='images/images-mail-icon.png', alt='')
+							p
+								a(href='mailto:support@despina.com') support@despina.com
+				.row
+					.col-md-8.col-sm-8.col-xs-12.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='300ms')
+						h5.text-coffee Leave us a Message
+						p
+							| Aenean massa diam, viverra vitae luctus sed, gravida eget est. Etiam nec ipsum
+							| porttitor, consequat libero eu, dignissim eros. Nulla auctor lacinia enim id mollis.
+						form.form(method='post', name='contact-form')
+							.row
+								.alert-container
+								.col-md-6.col-sm-6.col-xs-12
+									label First Name *
+									input(name='first_name', type='text', required='')
+								.col-md-6.col-sm-6.col-xs-12
+									label Last Name *
+									input(name='last_name', type='text', required='')
+								.col-md-6.col-sm-6.col-xs-12
+									label Email *
+									input(name='email', type='email', required='')
+								.col-md-6.col-sm-6.col-xs-12
+									label Subject *
+									input(name='subject', type='text', required='')
+								.col-md-12.col-sm-12.col-xs-12
+									label Your Message *
+									textarea(name='message', required='')
+								.col-md-12.col-sm-12.col-xs-12
+									input.btn-black.pull-right.send_message(name='submit', value='SEND MESSAGE', type='submit')
+					.col-md-4.col-sm-4.col-xs-12.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='300ms')
+						h5.text-coffee Opening Hours
+						ul.time-list
+							li
+								span.week-name Monday
+								span 12-6 PM
+							li
+								span.week-name Tuesday
+								span 12-6 PM
+							li
+								span.week-name Wednesday
+								span 12-6 PM
+							li
+								span.week-name Thursday
+								span 12-6 PM
+							li
+								span.week-name Friday
+								span 12-6 PM
+							li
+								span.week-name Saturday
+								span 12-6 PM
+							li
+								span.week-name Sunday
+								span Closed
+		// End Contact Part

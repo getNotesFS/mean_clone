@@ -1,0 +1,33 @@
+extends layout
+
+
+block content
+		
+    // Start Breadcrumb Part
+    section.breadcrumb-part(data-stellar-offset-parent='true', data-stellar-background-ratio='0.5', style="background-image: url('images/breadbg1.jpg');")
+        .container
+            .breadcrumb-inner
+                h2 TRACK YOUR ORDER
+                a(href='#') Home
+                span Shop
+    // End Breadcrumb Part
+    section.home-icon.shop-cart.bg-skeen
+        .icon-default.icon-skeen
+            img(src='images/images-scroll-arrow.png', alt='')
+        .container
+            .checkout-wrap.checkout-wrap-more.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='300ms')
+                ul.checkout-bar
+                    li.done-proceed Order Placed
+                    li.done-proceed Preparing
+                    li.active Bake
+                    li Box
+                    li Delivery
+            .track-oder.wow.fadeInDown(data-wow-duration='1000ms', data-wow-delay='300ms')
+                .track-oder-inner
+                    .clock-track-icon
+                        img(src='images/images-clock-icon.png', alt='')
+                    .track-status
+                        h3
+                            span Order Status:
+                            br
+                            |  We are now baking your Coffee
